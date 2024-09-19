@@ -1,7 +1,7 @@
 {
   "name": "@x.render/babel-plugin-transform-jsx-style-units-to-vw",
   "description": "处理react组件style属性中所有属性，符合条件的转换成vw",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "scripts": {
     "prepublishOnly": "npm run build && npm run test",
@@ -37,5 +37,9 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/render-ydb/babel-plugin-transform-style-units-to-vw.git"
   }
 }
