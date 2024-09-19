@@ -1,0 +1,41 @@
+{
+  "name": "@x.render/babel-plugin-transform-jsx-style-units-to-vw",
+  "description": "处理react组件style属性中所有属性，符合条件的转换成vw",
+  "version": "1.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublishOnly": "npm run build && npm run test",
+    "test": "jest",
+    "start": "tsc --watch",
+    "build": "tsc"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-runtime": "^7.25.4",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/types": "^7.25.6",
+    "@types/babel__core": "^7.20.5",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.5.5",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "typescript": "^5.6.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "target": "es2016", // 目标JavaScript版本，这里设置为ES6
+    "module": "commonjs", // 模块系统设置为CommonJS
+    "outDir": "./lib", // 编译后的文件输出目录
+    "strict": true, // 启用所有严格的类型检查选项
+    "esModuleInterop": true, // 允许在CommonJS模块中默认支持ES模块interop
+    "skipLibCheck": true, // 跳过类型库中的类型检查，加快编译速度
+    "forceConsistentCasingInFileNames": true // 强制在文件名区分大小写的一致性
+  },
+  "include": [
+    // 指定哪些文件应该被编译
+    "src/**/*"
+  ],
+  "exclude": [
+    // 指定哪些文件不应该被编译
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
